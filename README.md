@@ -1,6 +1,6 @@
 # To draw a map:
 
->> python county_map.py
+\>\> python county_map.py
 
 # Options
 
