@@ -30,7 +30,7 @@ import altair as alt
 from vega_datasets import data
 import numpy as np
 import pandas as pd
-import pprint as pt
+# import pprint as pt
 
 source = pd.read_csv(input_name, dtype={'State FIPS':np.int, 'County FIPS':str, period_name:str, target:np.float64})
 keys = list(source.columns.values)
