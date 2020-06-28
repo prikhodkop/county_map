@@ -8,7 +8,7 @@ Type in console:<br/>
 Drawing options are at the beginning of **county_map.py** file in the **OPTIONS** block
 
 # Dependencies
-Python version: 3.6+ 
+Python version: 3.6+ \*
 
 **pandas** \*<br/>
 **matplotlib** \*<br/>
@@ -16,4 +16,4 @@ Python version: 3.6+
 **altair** <i>(https://altair-viz.github.io/getting_started/installation.html)</i><br/>
 **altair_saver** <i>(https://github.com/altair-viz/altair_saver)</i><br/>
 
-<i> \* all these libraries are contained in Anaconda (https://www.anaconda.com/products/individual) package </i>
+<i> \* all these are contained in Anaconda package (https://www.anaconda.com/products/individual)</i>
