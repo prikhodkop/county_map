@@ -8,6 +8,8 @@ Type in console:<br/>
 Drawing options are at the beginning of county_map.py file in the **OPTIONS** block
 
 # Dependencies
+Python version: Python 3.6+
+
 **pandas** \*<br/>
 **matplotlib** \*<br/>
 **numpy** \*<br/>
