@@ -47,8 +47,7 @@ if period_name in keys:
 counties = alt.topo_feature('https://raw.githubusercontent.com/prikhodkop/county_map/master/us-10m.json', 'counties')
 
 chart = alt.Chart(counties).mark_geoshape().encode(
-    color=alt.Color(target+':Q', scale=alt.Scale(scheme=color_scheme), legend=alt.Legend(title=legend_title, tickCount=tick_count)),
-    tooltip=target+':N'
+    color=alt.Color(target+':Q', scale=alt.Scale(scheme=color_scheme), legend=alt.Legend(title=legend_title, tickCount=tick_count))
 ).transform_lookup(
     lookup='id',
     from_=alt.LookupData(source, 'id', [target])
@@ -77,6 +76,22 @@ if show_state_borders:
     )
 
     chart += states_chart
+
+    chart2 = alt.Chart(counties).mark_geoshape(fill='lightgray',
+    fillOpacity=0.0).encode(
+        tooltip=target+':N'
+    ).transform_lookup(
+        lookup='id',
+        from_=alt.LookupData(source, 'id', [target])
+    ).project(
+        type='albersUsa'
+    ).properties(
+        width=fig_width,
+        height=fig_height,
+        title= map_title,
+    )
+
+    chart += chart2
 
 if show_capitals:
     capitals = data.us_state_capitals.url
