@@ -1,6 +1,6 @@
 # To draw a map
-Type in console:
-\>\> python county_map.py
+Type in console:<br/>
+<i>\>\> python county_map.py</i>
 
 # Options
 Drawing options are at the beginning of county_map.py file in the **OPTIONS** block
