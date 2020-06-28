@@ -1,7 +1,7 @@
 # To draw a map
 Type in console:<br/>
 ```
-\>\> python county_map.py
+>> python county_map.py
 ```
 
 # Options
