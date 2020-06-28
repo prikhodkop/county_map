@@ -5,7 +5,7 @@ Type in console:<br/>
 ```
 
 # Options
-Drawing options are at the beginning of county_map.py file in the **OPTIONS** block
+Drawing options are at the beginning of **county_map.py** file in the **OPTIONS** block
 
 # Dependencies
 ## Python version: 
